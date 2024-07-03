@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="style/style.css" />
+		<script src="app.js"></script>
+		<title>Encriptador</title>
+	</head>
+	<body>
+		<header class="header">
+			<a
+				class="header__link"
+				href="https://www.aluracursos.com/"
+				target="_blank"
+				><img
+					class="header__link__img"
+					src="assests/img/Logo.png"
+					alt="Imagen logo AluraLatam"
+			/></a>
+		</header>
+		<main class="container">
+			<section class="container__izquierda">
+				<textarea
+					name="input"
+					id="container__izquierda__textarea"
+					placeholder="Ingrese el texto aqui"></textarea>
+				<p class="container__izquierda__p">
+					<img
+						src="assests/img/bi_exclamation-circle-fill.png"
+						alt="Circulo con exclamacion" />
+					Solo letras minúsculas y sin acentos
+				</p>
+				<div class="container__izquierda__botones">
+					<button
+						onclick="encriptar()"
+						id="container__botones__encriptar"
+						class="button">
+						Encriptar
+					</button>
+					<button
+						onclick="desencriptar()"
+						id="container__botones__desencriptar"
+						class="button">
+						Desencriptar
+					</button>
+				</div>
+			</section>
+			<section class="container__derecha">
+				<p id="container__derecha__p"></p>
+				<div id="container__derecha__div">
+					<img
+						id="container__derecha__div__img"
+						src="assests/img/Muñeco.png"
+						alt="Imagen de alguien apreciando un diamante" />
+					<div class="container__derecha__div__texto">
+						<h2 id="container__derecha__div__texto__h2">
+							Ningún mensaje fue encontrado
+						</h2>
+						<p id="container__derecha__div__texto__p">
+							Ingresa el texto que desees encriptar o desencriptar.
+						</p>
+					</div>
+				</div>
+				<button
+					onclick="copiarTexto()"
+					id="container__derecha__boton"
+					class="button">
+					Copiar
+				</button>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="footer__p">
+				Desarrollado por
+				<a
+					class="footer__p__enlace"
+					href="https://github.com/SkollFenrir"
+					target="_blank"
+					>@SkollFenrir</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>
